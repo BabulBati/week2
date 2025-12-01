@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +8,115 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
-        <nav>
-            <a href="#home" class="nav_link">Home</a>
-            <a href="#about" class="nav_link">About</a>
-            <a href="#projects" class="nav_link">Projects</a>
-            <a href="#contact" class="nav_link">Contact</a>
+        <nav class="navbar">
+            <a href="#hero" class="logo">
+                <span>My Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+                ☰
+            </button>
         </nav>
     </header>
-    <main>
 
-        <section id="home">
-            <h3>Hello, I'm</h3>
+    <section id="hero">
+        <div class="hero-content">
             <h1>Babul Krishna Bati</h1>
-            <h2>Full Stack Developer</h2>
-        </section>
+            <p>Frontend Developer & UI/UX Enthusiast</p>
+        </div>
+        <video autoplay loop muted
+            id="video-background"><!-- Use a small, low-res video file for demonstration/performance -->
+            <source src="https://www.pexels.com/download/video/3130284/" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-me">
-                <div class="about-me__text">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+    <section id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iure non deleniti ea consectetur quo
+            recusandae rerum. Facere, asperiores! Enim deleniti minima itaque nostrum distinctio vitae soluta ad magni
+            ipsum!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus temporibus veniam aliquam natus expedita
+            incidunt, itaque fugiat perferendis placeat eveniet exercitationem dolorem explicabo laboriosam iure sint
+            minima. Modi, maxime dolorem?</p>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <div>
+                    <img src="https://dummyimage.com/300/fff" alt="project 1">
                 </div>
-                <div class="about-me__image">
-                    <img src="images/Me.jpg">
+                <div>
+                    <h3 class="project-tiitle">Project 1</h3>
+                    <p class="project-description">This is description for project 1</p>
                 </div>
             </div>
-        </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-cards">
-                <div class="project-card">
-                    <div>
-                        <img src="https://dummyimage.com/300" alt="project 1">
-                    </div>
-                    <div>
-                        <h3 class="project-tiitle">Project 1</h3>
-                        <p class="project-description">This is description for project 1</p>
-                    </div>
+            <div class="project-card">
+                <div>
+                    <img src="https://dummyimage.com/300/fff" alt="project 2">
                 </div>
-
-                <div class="project-card">
-                    <div>
-                        <img src="https://dummyimage.com/300" alt="project 2">
-                    </div>
-                    <div>
-                        <h3 class="project-tiitle">Project 2</h3>
-                        <p class="project-description">This is description for project 2</p>
-                    </div>
+                <div>
+                    <h3 class="project-tiitle">Project 2</h3>
+                    <p class="project-description">This is description for project 2</p>
                 </div>
-
-                <div class="project-card">
-                    <div>
-                        <img src="https://dummyimage.com/300" alt="project 3">
-                    </div>
-                    <div>
-                        <h3 class="project-tiitle">Project 3</h3>
-                        <p class="project-description">This is description for project 3</p>
-                    </div>
-                </div>
-               
             </div>
 
-        </section>
+            <div class="project-card">
+                <div>
+                    <img src="https://dummyimage.com/300/fff" alt="project 3">
+                </div>
+                <div>
+                    <h3 class="project-tiitle">Project 3</h3>
+                    <p class="project-description">This is description for project 3</p>
+                </div>
+            </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <form class="contact-form">
-                <label for="fname">Name
-                    <input type="text" id="fname" placeholder="Full Name">
-                </label>
-                <label for="yemail">Email
-                    <input type="email" id="yemail" placeholder="Email">
-                </label>
+        </div>
 
-                <label for="msg">Message
-                    <textarea id="msg">Write your message....</textarea>
-                </label>
-                <input type="submit" value="Submit">
-            </form>
-            
-        </section>
-    </main>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form" id="contactForm">
+            <label for="fname">Name
+                <input type="text" id="fname" placeholder="Full Name">
+            </label>
+            <label for="yemail">Email
+                <input type="email" id="yemail" placeholder="Email">
+            </label>
+
+            <label for="msg">Message
+                <textarea id="msg" placeholder="Write your message here ..."></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="from-messageDiv"></div>
+
+    </section>
+
+
     <footer>
         <p>&copy All right reserved @2025</p>
     </footer>
-    
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>
